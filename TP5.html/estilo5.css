@@ -1,0 +1,61 @@
+#parrafo1, #div1, #a1{
+    color: aqua;
+}
+#div2{
+    color: purple;
+}
+#div2 p{
+    color: red;
+}
+#div2 p b{
+    color: green;
+}
+#div2 p b a{
+    color: mediumblue;
+}
+#div3{
+    color: lime;
+}
+#div3 > p{
+    color: red;
+}
+#div3 > div > p{
+    color: crimson;
+}
+.colorPrimario{
+    color: red;
+}
+.colorSecundario{
+    color: orange;
+}
+.fondoPrimario{
+    background-color: red;
+    color: white;
+}
+.textoGrande{
+    font-size: x-large;
+}
+.textoChico{
+    font-size: x-small;
+}
+#Pseudo{ 
+    background-color: blue;
+    color: red;
+    padding: 50px;
+    background-color: green
+}
+#div4 div{
+width: 50px;
+height: 50px;
+background-color: red;
+display: inline-block;
+}
+#div4 div:first-child{
+    background-color: red;
+}
+#div4 div:last-child{
+    background-color: yellow;
+}
+#div4 div:nth-child(7){
+    background-color: blue;
+}

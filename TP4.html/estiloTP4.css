@@ -1,0 +1,55 @@
+body{
+    background-color: red;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#contenedor{
+    background-color: lightslategray;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+header{
+    font-size: xx-large;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover{
+    background-color: black;
+}
+main{
+    margin-top: 16px;
+    font-size: 20px;
+}
+article{
+    background-color: lightgray;
+    padding: 16px;
+    margin: 16px;
+}
+h2{
+    margin: 0;
+}
+footer{
+    background-color: black;
+    color: red;
+    padding: 16px;
+    text-align: center;
+}
+galeria img{
+    width: 20%;
+    margin: 2.5%;
+}
+galeria{
+    font-size: 0;
+}
+galeria img:hover{
+    width: 25%;
+    margin: 0;
+}
