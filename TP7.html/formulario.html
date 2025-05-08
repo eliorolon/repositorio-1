@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>formulario de contacto</h1>
+        </header>
+        <nav>
+            <a href="home">home</a>
+            <a href="nosotros">nosotros</a>
+            <a href="productos">productos</a>
+            <a href="contacto">contacto</a>
+        </nav>
+        <form action="" method="get">
+            <span>Dejanos tus datos para responderte a la brevedad</span>
+            <label for="nombre">nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="ingrese su nombre">
+            <label for="apellido">apellido</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="ingrese su apellido">
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" minlength="7" maxlength="8">
+            <label for="email">correo</label>
+            <input type="email" name="email" id="email">
+
+<label for="telefono">telefono</label>
+<input type="tel" name="telefono" id="telefono" value="+54911">
+<label for="nacimiento">fecha de nacimiento</label>
+<input type="date" name="nacimiento" id="nacimiento">
+<label for="doc">documentacion</label>
+<input type="file" name="doc" id="doc">
+<span>
+    <h2>Genero</h2>
+<input type="radio" name="genero" id="hombre">
+<label for="hombre">hombre</label>
+<input type="radio" name="genero" id="mujer">
+<label for="mujer">mujer</label>
+</span>
+<label for="nacionalidad">nacionalidad</label>
+<select name="nacionalidad" id="nacionalidad">
+    <option value="argentina">argentina</option>
+    <option value="brasileña">brasileña</option>
+    <option value="paraguaya">paraguaya</option>
+    <option value="portuguesa">portuguesa</option>
+    <option value="" selected disabled>seleccione la lista</option>
+</select>
+<span>
+    <h2>curso de su interes</h2>
+    <input type="checkbox" name="sublimacion" id="sublimacion" value="sublimacion">
+    <label for="sublimacion">sublimacion</label>
+    <input type="checkbox" name="progweb" id="progweb" value="pprogweb">
+    <label for="progweb">progweb</label>
+</span>
+
+<h2>consultas</h2>
+<textarea name="consultas" id="consultas" cols="30" rows="10" maxlength="256" placeholder="maximo de 256"></textarea>
+
+            <button type="submit">enviar</button>
+            <button type="reset">limpiar</button>
+        </form>
+    </div>
+</body>
+</html>
