@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
 h2{
     margin: 0;
 }
@@ -34,4 +36,20 @@ text-overflow: ellipsis;
 }
 #texto03:hover{
     white-space: wrap;
+}
+#texto4{
+   
+        font-family: "Fascinate Inline", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        background-color: lightsalmon;     
+}
+#texto5{
+    background-color: darkgoldenrod;
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: solid 1px black;
+}
+#texto5 h2{
+    column-span: all;
 }
