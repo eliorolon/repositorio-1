@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+table{
+    max-width: 800px;
+    border-collapse: collapse;
+}
+table td, table th{
+    padding: 8px;
+    border: 1px solid black;  
+}
+table th{
+    background-color: red;
+    color: black;
+}
+table tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+table tbody tr:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+table tbody tr{
+    transition: 0.3s;
+}
