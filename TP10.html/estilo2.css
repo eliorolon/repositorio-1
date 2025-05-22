@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: rgb(1, 14, 31);
     padding: 2em;
+    min-height: 400vh;
 }
 h1, h2{
     color: white;
@@ -33,5 +34,17 @@ h1, h2{
 #fijo{
     position: fixed;
     bottom: 0;
+    right: 0;
+}
+#pegajoso{
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    z-index: 2;
+}
+#absoluta{
+    background-color: red;
+    position: absolute;
+    top: 0;
     right: 0;
 }
