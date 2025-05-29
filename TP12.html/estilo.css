@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aqua;
+}
+#cont{
+    max-width: 800px;
+    background-color: white;
+    margin: 0 auto;
+}
+header img{
+width: 350px;
+}
+header{
+    text-align: center;
+}
+header h1{
+    margin: 0;
+    font-size: 2.5em;
+    color: cornflowerblue;
+}
+nav{
+    background-color: cornflowerblue;
+    margin: 1em 0;
+position: sticky;
+z-index: 20;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    display: inline-block;
+    transition: 0.5s;
+}
+nav a:hover{
+    background-color: rgb(36, 64, 117);
+}
+main{
+    padding: 0 2rem;
+    font-size: 0;
+}
+main img{
+    width: 30%;
+    vertical-align: top;
+}
+main span{
+    font-size: 1rem;
+    width: 70%;
+    display: inline-block;
+}
+#accion{
+    background-color: cornflowerblue;
+    margin: 1em 0;
+text-align: center;
+padding: 1em;
+font-size: 2em;
+color: white;
+}
+#acccion a{
+    background-color: white;
+    color: cornflowerblue;
+    text-decoration: none;
+    padding: 0.5em;
+}
+#accion :hover{
+    background-color: cornflowerblue;
+    color: white;
+}
+#testimonios{
+    padding: 0.2rem;
+}
+#testimonios > div > img{
+    display: block;
+width: 120px;
+margin: 0 auto;
+border-radius: 50%;
+filter: grayscale(100%);
+}
+
+section{
+    padding: 0;
+}
+#foto2{
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+border-radius: 50%;
+filter: grayscale(100%);
+
+}
+#foto3{
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+border-radius: 50%;
+filter: grayscale(100%);
+}
+#fondo{
+    background-color: rgb(165, 157, 157);
+font-family: 'Times New Roman', Times, serif;
+max-width: 800px;
+
+}
+#fondo > h2 > img{
+    width: 50px;
+}
+footer img{
+    width: 50px;
+padding-left: 500px;
+
+}
