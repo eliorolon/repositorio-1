@@ -1,0 +1,9 @@
+body{
+    margin: 0 auto;
+    background-color: dodgerblue;
+}
+#contenedor{
+    margin: 0;
+    background-color: white;
+    padding: 100px;
+}

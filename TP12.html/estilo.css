@@ -72,6 +72,7 @@ color: white;
 }
 #testimonios > div > img{
     display: block;
+    cursor: pointer;
 width: 120px;
 margin: 0 auto;
 border-radius: 50%;
@@ -83,6 +84,7 @@ section{
 }
 #foto2{
     width: 120px;
+    cursor: pointer;
     margin: 0 auto;
     display: block;
 border-radius: 50%;
@@ -93,6 +95,7 @@ filter: grayscale(100%);
     width: 120px;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
 border-radius: 50%;
 filter: grayscale(100%);
 }
@@ -108,5 +111,5 @@ max-width: 800px;
 footer img{
     width: 50px;
 padding-left: 500px;
-
+vertical-align: middle;
 }

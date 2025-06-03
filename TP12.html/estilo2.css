@@ -1,0 +1,14 @@
+body{
+    background-color: #07a;
+    margin: 0 auto;
+}
+#contenedor{
+    background-color: aliceblue;
+    width: 800px;
+    margin: 0 auto;
+}
+#contenedor a{
+text-decoration: none;
+background-color: rgb(143, 143, 143);
+color: black;
+}
