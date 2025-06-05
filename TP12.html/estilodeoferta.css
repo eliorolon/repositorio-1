@@ -1,0 +1,26 @@
+.contenedor{
+    background-color: aqua;
+    margin: 0 auto;
+    max-width: 400px;
+}
+a{
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    margin-left: 400px;
+    back
+}
+#text1{
+    margin-left: 400px;
+}
+#text2{
+    margin-left: 400px;
+}
+img{
+    max-height: 240px;
+     
+}
+img:hover{
+    transition: 1s;
+    
+}
