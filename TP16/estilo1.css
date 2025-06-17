@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    font-family: cursive;
+    
+}
+#contenedor{
+text-align: center;
+
+}
+a{
+    text-decoration: none ;
+    background-color: darkred;
+    color: white;
+    padding: 6px;
+}
+#fi{
+    text-align: center;
+    padding: 50px;
+}
+#fotos img{
+    margin: 10px;
+    padding: 10px;
+}
+#foto2{
+    text-align: center;
+}
+#mensajeC{
+    text-align: center;   
+}
+#foto2 img{
+    border-radius: 50%;
+    max-width: 150px;
+}
+#botoncito{
+    text-align: center;
+    
+}
