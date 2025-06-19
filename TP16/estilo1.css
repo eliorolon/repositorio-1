@@ -7,13 +7,11 @@ body{
 }
 #contenedor{
 text-align: center;
-
 }
-a{
+#contenedor a{
     text-decoration: none ;
     background-color: darkred;
-    color: white;
-    padding: 6px;
+    color: white;  
 }
 #fi{
     text-align: center;
@@ -35,5 +33,58 @@ a{
 }
 #botoncito{
     text-align: center;
+    padding: 40px;
     
+}
+#nombre{
+display: block;
+border-radius: 7px;
+margin-bottom: 16px;
+padding: 5px;
+}
+#correo{
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    margin-bottom: 16px;
+    padding: 5px;
+}
+#opiniones{
+    display: block;
+    padding: 5px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+     
+    
+}
+#contenedor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#redes img{
+    border-radius: 50%;
+    max-width: 50px;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+#redes{
+    text-align: center;
+}
+#mensajeC{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#parrafo1{
+    display: flex;
+}
+#tituloP{
+text-align: left;
+}
+#espacio{
+    display: flex;
+}
+#modificarcolor{
+    border: 4px solid darkred;
 }
