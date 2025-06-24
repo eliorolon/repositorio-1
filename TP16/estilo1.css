@@ -7,11 +7,18 @@ body{
 }
 #contenedor{
 text-align: center;
+display: flex;
+align-items: center;
+gap: 20px;
+margin-left: 90px;
 }
 #contenedor a{
     text-decoration: none ;
     background-color: darkred;
-    color: white;  
+    color: white;
+    margin-left: 90px;
+    display: inline-block;
+    padding: 10px 25px;
 }
 #fi{
     text-align: center;
@@ -33,7 +40,7 @@ text-align: center;
 }
 #botoncito{
     text-align: center;
-    padding: 40px;
+    padding: 10px 20px;
     
 }
 #nombre{
@@ -79,12 +86,78 @@ padding: 5px;
 #parrafo1{
     display: flex;
 }
-#tituloP{
-text-align: left;
-}
 #espacio{
     display: flex;
 }
 #modificarcolor{
     border: 4px solid darkred;
+    padding: 70px;
+}
+#botonaccion{
+    text-decoration: none;
+   padding: 300px;
+   color: red;
+}
+#espacio{
+    margin: auto;
+    max-width: 85%;
+}
+#tituloP{
+    text-align: center;
+}
+#fotoprincipal{
+    text-align: center;
+}
+#contenedorPADRE{
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+#contenedorhijo1 a{
+    text-decoration: none;
+    color:red;
+    padding-left: 80px;
+}
+#contenedorhijo2 a{
+    text-decoration: none;
+    color: red;
+    padding-left: 80px;
+}
+#contenedorhijo3 a{
+    text-decoration: none;
+    color: red;
+    padding-left: 80px;
+}
+#contenedorhijo4 a{
+    text-decoration: none;
+    color: red;
+    padding-left: 80px;
+}
+#contenedorhijo5 a{
+    text-decoration: none;
+    color: red;
+    padding-left: 80px;
+}
+#contenedorhijo1{
+    border: 3px solid darkred;
+    padding-left: 20px;
+}
+#contenedorhijo2{
+    border: 3px solid darkred;
+    padding-left: 20px;
+}
+#contenedorhijo3{
+    border: 3px solid darkred;
+    padding-left: 20px;
+}
+#contenedorhijo4{
+    border: 3px solid darkred;
+    padding-left: 20px;
+}
+#contenedorhijo5{
+    border: 3px solid darkred;
+    padding-left: 20px;
+}
+#texto{
+    padding: 9px;
 }
