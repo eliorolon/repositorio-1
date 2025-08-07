@@ -24,3 +24,17 @@ console.log(document.querySelector("#contenidoPrincipal").textContent += " - mod
 
 console.log(document.querySelector("main").innerHTML += '<p class="parrafo">Parrafo 5</p>');
 
+document.querySelector("#textoinput").value = "texto agregado desde JS";
+
+document.querySelector("#divestilo").style.backgroundColor = "lightblue";
+
+document.querySelector("#divestilo").style.height = "300px";
+
+document.querySelector("#destino").innerHTML += "<p> texto agregado desde JS </p>";
+
+const element = document.createElement("p"); 
+
+element.textContent = "parrafo creado con createElement";
+
+document.querySelector("#destino").appendChild(element);
+
