@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: darkcyan;
+    transition: 2s;
+    padding: 2em;
+}
+h1{
+    color: white
+}
+
+body > div{
+ display: flex;
+ gap: 2em;
+}
+
+#formulario{
+    background-color: rgb(27, 87, 87);
+    padding: 1em;
+    color: white;
+}
+
+#respuestas{
+    background-color: black;
+    color: green;
+    padding: 1em;
+}
+
+#formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}

@@ -27,8 +27,9 @@ document.querySelector("#eventosdelmouse").addEventListener("wheel", (evento) =>
     console.log("evento click wheel");
 });
 
-document.querySelector("#eventosdelmouse").addEventListener("mousemove", (evento) => {
-    console.log("evento click mousemove");
+document.querySelector("#eventosdelmouse").addEventListener("mousemove", (e) => {
+    
+    document.querySelector("#eventosdelmouse > span").textContent = e.offsetX + "/" + e.offsetY;
 });
 
 document.querySelector("#eventostecla1").addEventListener("keydown", (evento) => {
@@ -40,5 +41,20 @@ document.querySelector("#eventostecla1").addEventListener("keyup", (evento) => {
 })
 
 document.querySelector("#eventostecla2").addEventListener("keypress", (evento) => {
-    console.log(evento.key);
+    console.log("evento.key");
 })
+
+document.querySelector("#foco").addEventListener("focus", (e) => {
+    console.log("evento focus");
+    //document.querySelector("#foco").style.background = "darkorange";
+    e.target.style.background = "darkred"
+
+});
+
+document.querySelector("#foco").addEventListener("blur", (e) => {
+    console.log("evento desenfocar");
+    
+    e.target.style.background = "white"
+
+});
+
