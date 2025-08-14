@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: darkcyan;
+    background-color: darkgreen;
     transition: 2s;
     padding: 2em;
 }
@@ -20,9 +20,9 @@ body > div{
 }
 
 #formulario{
-    background-color: rgb(27, 87, 87);
+    background-color: black;
     padding: 1em;
-    color: white;
+    color: white
 }
 
 #respuestas{
