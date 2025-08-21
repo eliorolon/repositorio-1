@@ -42,7 +42,7 @@ function validarForm(){
     arrayNombre.forEach((letra) => {})
 
     //console.log(letra.toLowercase());
-    let Query = letrasAprobadas.indexOf(letra.toLowerCase());
+    let Query = letrasAprobadas.indexOf(letra);
     if(Query === -1){
         resultados = false;
         errores.push("el campo nombre solo acepta letras");
