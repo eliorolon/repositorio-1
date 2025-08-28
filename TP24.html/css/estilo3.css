@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 37, 36);
+}
+
+#caja{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    color: white;
+}
+#agregar{
+    margin: 1em;
+}
+#resultado{
+    margin: 1em;
+}

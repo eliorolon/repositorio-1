@@ -1,6 +1,36 @@
 body{
     background-color: darkgrey;
-}
-menu{
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    
+}
+#ingredientes{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(112, 112, 112);
+    height: 500px;
+    width: 700px;
+}
+#menu{
+    display: grid;
+    padding: 1em;
+}
+#menu span{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+#titulo {
+    line-height: 500%;
+}
+#calcular{
+    font-family: fantasy;
+    font-size: 30px;
+    cursor: pointer;
+}
+#resultados{
+    background-color: white;
+    color: black;
 }
