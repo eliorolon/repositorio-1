@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practia</title>
+    <title>ejercicio js</title>
     <link rel="stylesheet" href="css/estilo3.css">
 </head>
 <body>
-    <div class="contenedor" id="caja">
-    <h1>listas de asistencias</h1>
-    <input type="text" placeholder="AGREGUE SU NOMBRE..." id="nombre">
-    <button id="agregar">Agregar</button>
-    <button>Ver</button>
-    <input type="text" placeholder="RESULTADO..." id="resultado">
-</div>
-<script src="script/script3.js"></script>
+    <div class="caja" id="cajaSaludo">
+        <h1>saludo pérsonalizado</h1>
+        <input type="text" id="nombre" placeholder="ingrese su nombre">
+        <span>
+            <button id="saludar">Saludar</button>
+            <p id="mensaje">...respuesta</p>
+        </span>
+        <input type="text" id="resultado" placeholder="ingrese su resultado"> 
+    </div>
+    <div class="caja" id="ingredientes">
+        <h1>calculadora de ingredientes</h1>
+        <span>
+            <span>receta por persona</span>
+            <span>500 grms de papas</span>
+            <span>100 ml de leche</span>
+            <span>30 grms de manteca</span>
+            <span>1 huevo</span>
+        </span>
+        <input type="text">
+        <button type="text">calcular</button>
+        <input type="text">
+    </div>
+    <script src="script/script3.js"></script>
 </body>
 </html>
