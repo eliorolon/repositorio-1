@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fichas personales</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body>
+    <h1>fichas de datos</h1>
+    <div class="caja" >
+        <h1>datos personales</h1>
+            <input type="text" placeholder="nombre" id="nombre">
+            <input type="text" placeholder="apellido" id="pellido">
+            <input type="text" placeholder="dni" id="dni">
+            <div class="btn" id="registrar">registrar</div>
+    </div>
+    <div id="vista" class="caja">
+        <h2>registros</h2>
+        <span>
+            <div class="btn" id="mostrar">mostrar</div>
+            <div class="btn" id="vaciar">vaciar</div>
+        </span>
+        <div id="salida"></div>
+    </div>
+    <div id="errores">error de ejemplo</div>
+    <script src="script/script.js"></script>
+</body>
+</html>

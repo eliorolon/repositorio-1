@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(124, 41, 41);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+}
+h1{
+    border-bottom: 4px solid white;
+    gap: 1em;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    max-width: 400px;
+    background-color: rgb(92, 92, 92);
+}
+.caja input{
+    padding: 10px;
+    
+}
+.btn{
+    background-color: white;
+    width: 60px;
+    width: fit-content;
+    padding: 0.5em;
+    font-weight: 600;
+    user-select: none;
+}
+#vista span{
+    display: flex;
+    gap: 1em;
+}
+#errores{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5em;
+    background-color: rgb(99, 5, 5);
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+#salida{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.ficha{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+}

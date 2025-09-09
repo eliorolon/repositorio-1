@@ -19,7 +19,7 @@ estado : () => {
 console.log(curso);
 
 console.log(curso.sede);
-console.log(curso["turno"]);
+console.log(curso[`turno`]);
 
 // modificar una propiedad
 
