@@ -1,40 +1,60 @@
 document.querySelector("#registrar").addEventListener("click", () => {
-    console.log("click a registrar")
-    // capturar datos
-    const nombre = document.querySelector("nombre");
-    const apellido = document.querySelector("apellido");
-    const dni = document.querySelector("dni");
-    //validar datos
-    if(nombre.value == "" || apellido.value == "" || dni.value == ""){return;}
-    // crear instancia de clase
-    fichas.push(new Fichas(nombre.value, apellido.value, dni.value))
-    // agregar al array
-    // vaciar campos
-    nombre.value == "";
-    apellido.value == "";
-    dni.value == "";
-    // mostrar largo del array al usuario
-    const cantidadRegistros = fichas.length;
-    document.querySelector("#vista h2").innerHTML = `registros <span>${fichas.length}</span>`
+    const nombre = document.querySelector("#nombre");
+    const apellido = document.querySelector("#apellido");
+    const dni = document.querySelector("#dni");
+    //console.log(nombre.value, apellido.value, dni.value);
 
+    if(nombre.value === "" || apellido.value === "" || dni.value === ""){
+        //console.log("completar todos los campos faltantes");
 
-});
+    mostrarError("debes completar todos los campos para poder registrarse");
 
-document.querySelector("#mostrar").addEventListener("click", () => {
-    console.log("click a mostrar")
-});
+        return;
+    }
 
-document.querySelector("#vaciar").addEventListener("click", () => {
-    console.log("click a vaciar")
-});
+    let datos = {
+        nombre: nombre.value,
+        apellido: apellido.value,
+        dni: dni.value, 
+    }
+
+    //console.log(datos);
+    
+    fichas.push(datos);
+
+    console.log(fichas);
+
+    nombre.value = []
+    apellido.value = []
+    dni.value = []
+
+    document.querySelector("#vista h2").innerHTML = `Registros<span>${fichas.length}</span>`;
+    console.log("finaliza la funcion");
+})
 
 let fichas = [];
 
-class Fichas{
-    constructor(nombre, apellido, dni){
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.dni = dni;
-    }
+function mostrarError(txt){
+const divErrores = document.querySelector("#errores")
+divErrores.textContent = txt;
+divErrores.style.display = "flex";
+setTimeout(() => {
+divErrores.style.display = "none";
+}, 1000 * 10);
 }
 
+document.querySelector("#mostrar").addEventListener("click", () => {
+    //console.log("click al boton mostrar")
+    if(fichas.length == 0){
+        mostrarError("no hay registros para mostrar");
+        return;
+    }
+    fichas.forEach((objeto) => {
+        document.querySelector("#salida").innerHTML += `<div class="ficha">
+                <span>Nombre: ${objeto.nombre}</span>
+                <span>Apellido: ${objeto.apellido}</span>
+                <span>dni: ${objeto.dni}</span>
+            </div>`
+            
+    });
+})
