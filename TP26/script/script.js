@@ -29,6 +29,10 @@ document.querySelector("#registrar").addEventListener("click", () => {
     dni.value = []
 
     document.querySelector("#vista h2").innerHTML = `Registros<span>${fichas.length}</span>`;
+
+    //limpiar registros mostrados
+    document.querySelector("#salida").innerHTML = "";
+
     console.log("finaliza la funcion");
 })
 
@@ -44,6 +48,7 @@ divErrores.style.display = "none";
 }
 
 document.querySelector("#mostrar").addEventListener("click", () => {
+    document.querySelector("#salida").innerHTML = "";
     //console.log("click al boton mostrar")
     if(fichas.length == 0){
         mostrarError("no hay registros para mostrar");
@@ -55,6 +60,18 @@ document.querySelector("#mostrar").addEventListener("click", () => {
                 <span>Apellido: ${objeto.apellido}</span>
                 <span>dni: ${objeto.dni}</span>
             </div>`
-            
+       
     });
-})
+});
+document.querySelector("#vaciar").addEventListener("click", () => {
+    //vaciar los inputs
+document.querySelector("#nombre");
+document.querySelector("#apellido");
+document.querySelector("#dni");
+    //vaciar los elementos de salida
+    document.querySelector("#salida").innerHTML = "";
+    //vaciar array de fichas
+    fichas = [];
+    //resetear contador
+      document.querySelector("#vista h2").innerHTML = `Registros`;
+});
