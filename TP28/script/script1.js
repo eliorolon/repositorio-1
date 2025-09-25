@@ -13,7 +13,7 @@ document.querySelector("#grabar").addEventListener("click", () =>{
         console.log("inputs vacios")
         return;
     };
-    //crear podriedad nombre y apellido
+    
     const datos = {
         nombre: nombre.value,
         apellido: apellido.value,
@@ -22,6 +22,7 @@ document.querySelector("#grabar").addEventListener("click", () =>{
     console.log(datos);
     // guardar en local storage
     localStorage.setItem("datos", JSON.stringify(datos));
+   
 });
 
 document.querySelector("#leer").addEventListener("click", () =>{
@@ -29,4 +30,4 @@ document.querySelector("#leer").addEventListener("click", () =>{
     console.log(localStorage);
     datosLS = JSON.parse(datosLS);
     console.log(datosLS);
-})
+});
