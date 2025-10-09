@@ -81,6 +81,8 @@ function mostrarDatos(){
       tareas[e.target.dataset.id].estado = "eliminada";
       localStorage.setItem("tareas", JSON.stringify(tareas));
       mostrarDatos();
+      
+
     });
   });
 
@@ -111,5 +113,12 @@ document.querySelector("#btnModifTarea").addEventListener("click", () => {
   localStorage.setItem("tareas", JSON.stringify(tareas));
   mostrarDatos();
   document.querySelector("#cortina").style.display = "none";
-})
+});
 
+document.querySelector("#btnBorrarTodo").addEventListener("click", () => {
+  if (confirm("¿Seguro que quieres borrar todas las tareas? Esta acción no se puede deshacer.")) {
+    localStorage.removeItem("tareas"); // Borra solo las tareas
+    tareas = []; // Limpia el arreglo en memoria
+    mostrarDatos(); // Actualiza la interfaz
+  }
+});
