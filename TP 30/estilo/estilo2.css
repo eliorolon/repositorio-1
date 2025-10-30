@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    background-color: rgb(53, 54, 54);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn{
+width: max-content;
+font-size: 1.5em;
+cursor: pointer;
+transition: 1s;
+
+}
+body > header{
+    display: flex;
+    gap: 1em;
+}
+.btn:hover{
+    color: darkgreen;
+    background-color: lightblue;
+}
+body > footer{
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+
+}
+body > span > main{
+    font-size: 1.5em;
+}
