@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(51, 51, 49);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+h1{
+    border-bottom: 2px solid darkgrey;
+}
+.res{
+    display: flex;
+    background-color: white;
+    padding: 1em;
+}
+.btn{
+    background-color:  rgb(17, 17, 17);
+    color: white;
+    padding: 0.7;
+    width: fit-content;
+    cursor: pointer;
+}
