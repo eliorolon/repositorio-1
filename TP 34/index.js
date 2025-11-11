@@ -1,0 +1,1 @@
+console.log("test de nodemon en la terminal");
