@@ -23,8 +23,13 @@ header, nav , main , footer{
 header{
     font-size: 2.5em;
 }
-nav{
+nav a{
     flex-direction: row;
+    gap: 1em;
+    color: white;
+    background-color: black;
+    max-width: 70px;
+    max-height: 90px;
     gap: 1em;
 }
 

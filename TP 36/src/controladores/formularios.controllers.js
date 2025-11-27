@@ -1,4 +1,4 @@
-import {insertDatosFormulario} from "../services/formularios.services.js"
+import {insertDatosFormulario} from "../services/formulario.services.js"
 
 export const formularioContacto = async (req, res) => {
     console.log("--> FormularioContacto");
