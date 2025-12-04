@@ -1,8 +1,9 @@
+import "dotenv/config";
+
 import express from "express"
 
 import {rutas} from "./src/routes/site.routes.js";
 
-import "dotenv/config";
 
 const PORT = 4000
 
@@ -20,4 +21,4 @@ app.use((req, res, next) => {
 
 app.listen(PORT, () => {
     console.log(`servidor activo en http://localhost:${PORT}`)
-})
+});

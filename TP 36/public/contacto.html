@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="error" class="pop"></div>
     <header>home de mi sitio</header>
     <nav>
-        <a href="home">contacto</a>
-        <a href="contactos">contactos</a>
+        <a href="home.html">contacto</a>
+        <a href="contactos.html">contactos</a>
         <a href="login.html">login</a>
     </nav>
     <main>
         <h1>sitio servido por nodejs y express</h1>
-        <form action="/contacto" method="post">
+        <form action="/contactos" method="post">
             <input type="text" name="nombre" id="nombre">
             <input type="text" name="telefono" id="numero de telefono">
             <input type="submit" value="enviar">
@@ -24,5 +25,6 @@
     <footer>
         hecho por elio
     </footer>
+    <script src="script/leerParametrosURL.js"></script>
 </body>
 </html>

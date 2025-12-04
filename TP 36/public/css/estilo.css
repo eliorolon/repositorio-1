@@ -12,6 +12,7 @@ body{
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     max-width: 100%;
+    color: white;
 }
 header, nav , main , footer{
     max-width: 80vw;
@@ -25,15 +26,21 @@ header{
 }
 nav a{
     flex-direction: row;
-    gap: 1em;
+    gap: 2em;
     color: white;
     background-color: black;
-    max-width: 70px;
-    max-height: 90px;
-    gap: 1em;
+    width: 70px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
 
 form input{
     padding: 0.3em;
     border-radius: 0.3em;
+}
+.pop#error{
+background-color: darkred;
+max-width: 100%;
 }

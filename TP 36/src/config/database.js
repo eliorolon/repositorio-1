@@ -6,16 +6,16 @@ export const pool = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
+    database: process.env.DB_DATANAME,
     port: process.env.DB_PORT,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
-})
+}) 
 
 export const query = async(sql) => {
     try {
-        const [resp] = await pool.query(sql);
+        const resp = await pool.query(sql);
         return resp;
     } catch (error) {
         console.error(`error en query: ${error.msg}`);
