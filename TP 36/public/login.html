@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="error" class="pop"></div>
+    <div id="msg" class="pop"></div>
     <header>home de mi sitio</header>
     <nav>
-        <a href="home.html">home</a>
+        <a href="index.html">home</a>
         <a href="contactos.html">contactos</a>
         <a href="login.html">login</a>
     </nav>
     <main>
-        <h1>sitio servido por nodejs y express</h1>
+        <h1>LOGIN</h1>
         <form action="/login" method="post">
             <input type="text" name="usuario" id="usuario">
             <input type="password" name="password" id="password">
@@ -24,5 +26,6 @@
     <footer>
         hecho por elio
     </footer>
+    <script src="script/leerParametrosURL.js"></script>
 </body>
 </html>

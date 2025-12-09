@@ -1,11 +1,11 @@
 console.log("leer parametros URL")
 
 let url = window.location;
-console.log(url.search);
+//console.log(url.search);
 
 let params = new URLSearchParams(url.search);
-console.log(params.get("error"))
-console.log(params.has("error"))
+//console.log(params.get("error"))
+//console.log(params.has("error"))
 
 if(params.has("error")){
     document.querySelector("#error").innerHTML += params.get("error");
@@ -28,3 +28,10 @@ function timeOutPop(){
         })
     }, 6000);
 }
+
+if(params.has("msg")){
+    document.querySelector("#msg").innerHTML += params.get("msg");
+    document.querySelector("#msg").style.display = "block";
+    timeOutPop();
+}
+
