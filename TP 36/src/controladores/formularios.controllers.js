@@ -1,4 +1,4 @@
-import {insertDatosFormulario} from "../services/formulario.services.js"
+import {insertDatosFormulario, selectUsuarios, selectContactos} from "../services/formulario.services.js"
 
 export const formularioContacto = async (req, res) => {
     console.log("--> FormularioContacto");
@@ -17,9 +17,29 @@ export const formularioContacto = async (req, res) => {
 
 export const postLogin = async (req, res) => {
     console.log("--> postLogin");
-
-
+    //leer la tabla de usuarios
+    const tablaUsuarios = await selectUsuarios();
+    //buscar user del req en 
+    const busquedaUsuario = tablaUsuarios.data.findIndex((reg) => {return reg.usuario == req.body.usuario});
+    if(busquedaUsuario === -1){
+        res.redirect("/login.html?error=Error en login");
+        return;
+    }
+    //si existe verificar si las contraseñas coinciden
+    if(req.body.password !== tablaUsuarios.data[busquedaUsuario].password){
+        res.redirect("/login.html?error=Error en login");
+    }
 
     console.log("login exitoso");
-    res.redirect("/login.html?msg=Login exitoso")
+    res.redirect("/login.html?msg=login fallado")
+}
+
+export const leerContactos = async(req,res) => {
+    const query = await selectContactos();
+    if(query.error){
+        console.log("error al leer contactos");
+        return res.send({error: true});
+    } else {
+        return res.send({error: false, data: query.data});
+    }
 }
