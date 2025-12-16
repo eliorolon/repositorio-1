@@ -1,0 +1,74 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(53, 53, 53);
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(53, 53, 53);
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 100%;
+    color: white;
+}
+header, nav , main , footer{
+    max-width: 80vw;
+    padding:1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    font-size: 2.5em;
+}
+nav a{
+    flex-direction: row;
+    gap: 2em;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input{
+    padding: 0.3em;
+    border-radius: 0.3em;
+    background-color: white;
+}
+.pop#error{
+background-color: darkred;
+max-width: 100%;
+}
+#home{
+    width: 110px;
+    height: 40px;
+}
+.opciones{
+    color: white;
+}
+.select{
+    color:white;
+}
+#enviar{
+    color: white;
+}
+#sede{
+    color: white;
+}
+#formulario {
+  display: flex;
+  gap: 10px;              
+  align-items: center;   
+  flex-wrap: wrap;    
+}
+.fila option{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
