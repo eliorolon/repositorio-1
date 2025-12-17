@@ -21,4 +21,4 @@ app.use((req, res, next) => {
 
 app.listen(PORT, () => {
     console.log(`servidor activo en http://localhost:${PORT}`)
-});
+}); 

@@ -1,4 +1,4 @@
-document.querySelector("#enviar").addEventListener("click", function () {
+document.querySelector("#enviar").addEventListener("click",(e) => {
     
     const nombre = document.getElementById("NOMBRE").value;
     const dni = document.getElementById("DNI").value;
